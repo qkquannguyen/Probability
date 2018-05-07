@@ -32,10 +32,10 @@ public class compute_a_posteriori {
     // ----------------------- Main Function -------------------------- //
     public static void main(String[] args) throws IOException {
         // --- Initialize Main Variables
-        DecimalFormat decimalFormat = new DecimalFormat("#.#####");     // --- Formats Decimal answers to 5 decimal places
+        DecimalFormat decimalFormat = new DecimalFormat("#.#####");             // --- Formats Decimal answers to 5 decimal places
         decimalFormat.setRoundingMode(RoundingMode.CEILING);
 
-        File fileOut = new File("result.txt");                        // --- Creates a new file named "result.txt"
+        File fileOut = new File("result.txt");                                  // --- Creates a new file named "result.txt"
         FileOutputStream fileOutputStream = new FileOutputStream(fileOut);      // --- File Output Stream
                                                                                 // --- Writes Results (Line 41)
         BufferedWriter resultsWriter = new BufferedWriter(new OutputStreamWriter(fileOutputStream));
